@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: beige;
+            margin: 0px;
+        }
+        header {
+            width: 600px;
+            background-color: aqua;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        main {
+            background-color: red;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        footer {
+            text-align: center;
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 4px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article {
+            padding: 5px;
+        }
+        article > aside {
+            background-color: bisque;
+        }
+        nav {
+            background-color: gray;
+            padding: 3px;
+            box-shadow: inset 1px 1px 1px 1px rgb(81, 141, 24);
+        }
+        nav > a {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: unset;
+        }
+        
+    </style>
+</head>
+<body>
+  <header>
+<h1>meu site</h1>
+<nav>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+</nav>
+  </header>
+    <main>
+<section id="assuntos">
+
+</section>
+<section id="noticias">
+    <article>
+        <h2>not</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa accusamus sunt? Asperiores at facere suscipit, neque aliquam doloremque placeat sint rem eos facilis quisquam alias ipsum possimus dicta? Perspiciatis.</p>
+        <aside>
+            <p>artigo feito por eu</p>
+        </aside>
+    </article>
+</section>
+    </main>
+    <footer>
+<p>eu fiz</p>
+    </footer>
+</body>
+</html>

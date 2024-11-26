@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption {
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>ex de tabelas</h1>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">grupos</th>
+                <th scope="col">nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">mulheres</th>
+                <td>ana</td>
+                <td>alien</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>beatriz</td>
+                <td>hulk</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+            </tr>
+            <tr>
+                <td>claudia</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">homens</th>
+                <td>bruno</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+                <td>xxxx</td>
+            </tr>
+            <tr>
+                <td>daniel</td>
+                <td>xxxx</td>
+                <td>xxxxx</td>
+                <td>xxxxx</td>
+            </tr>
+            <tr>
+                <td>dean</td>
+                <td>xxx</td>
+                <td>xxx</td>
+                <td>xxxx</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

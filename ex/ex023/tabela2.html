@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        /* Isso recomendado p tabela grande */
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        thead {
+            background-color: yellow;
+        }
+        td.num {
+            text-align: right;
+        }
+        caption {
+            font-weight: bolder;
+            background-color: rgb(206, 192, 69);
+        }
+        tbody > tr:nth-child(1n) {
+            background-color: rgb(22, 207, 80);
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+    table
+       capition
+       thead
+           tr,td,th
+        tbody
+           tr,td,th
+        tfoot
+           tr,td,th-->
+           <table>
+            <caption>População sp</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">população</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sp</td>
+                    <td class="num">45 mi (2022)</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th style="background-color: yellow;" scope="row">Total de habitantes</th>
+                <td class="num">0000</td>
+            </tfoot>
+           </table>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem error repellendus temporibus voluptatum sed soluta, quae rerum repudiandae rem ducimus magnam deserunt. Itaque, error est rem voluptates magni eligendi provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, doloribus expedita sed perferendis neque deleniti corrupti aliquam eveniet temporibus officiis ad, minima consectetur, non inventore atque molestias suscipit cumque eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sed, illo excepturi reiciendis voluptates ipsa consequatur officiis cum, et harum nesciunt possimus ut praesentium officia commodi? Placeat quibusdam repudiandae natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, nihil! Iste nostrum similique consequatur! Vero quas minus, neque aliquam enim odio blanditiis reiciendis molestiae illo fugiat natus voluptate. Impedit, delectus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus adipisci atque dolores, in architecto repellendus natus quos incidunt optio voluptatum aliquam quis quaerat, ut expedita quia deserunt tempore recusandae impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum nisi itaque quasi. Ipsa deleniti quia excepturi repellat ipsum. Velit perferendis iusto sed odit atque, nam quas quo fugit odio? Iste! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, fugiat voluptas autem cum reiciendis nobis culpa aliquam libero cumque dolorum illum quod maxime doloribus veniam eos itaque possimus in numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere optio delectus quia expedita! Dicta esse repellat odit vero. Nam enim voluptatum odit dolores corrupti rerum ratione eligendi ipsam, optio dicta? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aperiam minus deleniti sint quos temporibus, nam praesentium dolores, explicabo at aut laudantium est nihil provident vitae quod. Deleniti, ipsam perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nulla exercitationem et ex. Deserunt, sunt, natus inventore nihil aut eveniet dolore quidem modi commodi, iste in soluta voluptates suscipit pariatu Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, quibusdam? Reiciendis molestiae fugiat at, dolor sit officia accusantium eligendi. Nostrum blanditiis itaque totam expedita nisi temporibus voluptatibus similique explicabo hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro sunt beatae blanditiis expedita sapiente esse est perspiciatis suscipit? Obcaecati recusandae mollitia officiis illum nobis aut numquam expedita delectus officia.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aspernatur natus repudiandae optio maxime et molestiae omnis, velit, iusto excepturi sequi facere rem esse delectus. Explicabo perspiciatis iusto mollitia libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, culpa tenetur iure corrupti ipsa molestias atque officia ex quidem voluptate sapiente eligendi! Vitae provident reprehenderit deserunt dolores? Facilis, dicta nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nostrum rerum veniam, ea assumenda repudiandae voluptate sunt nam vero ducimus expedita iusto culpa impedit accusantium quod aspernatur! Nesciunt, ipsa non?</p>
+</body>
+</html>

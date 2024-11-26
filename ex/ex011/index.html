@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir a img em dispositivos diversos</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="" type="image/">
+        <source media="(max-width: 1050px )" srcset="imagens/" type="image/imagem.png">
+        <img src="imagens/imagem.png" alt="imagem flexivel">
+    </picture>
+    <h1>audio</h1>
+    <p>vms aprender a usar audio</p>
+    <audio src="midia/Videodrome - National Sweetheart.mp3" controls autoplay></audio>
+    <audio preload="metadata">
+        <source src="midia/Videodrome - National Sweetheart.mp3" type="audio/mpeg">
+        <source src="midia/Videodrome - National Sweetheart.ogg" type="audio/ogg">
+        <source src="midia/Videodrome - National Sweetheart.wav" type="image/wav">
+        <p>infelizmente seu navegador não consegue reproduzir audio <a href="midia/Videodrome - National Sweetheart.mp3">clica aqui p baixa o audio</a></p>
+    </audio>
+</body>
+</html>
