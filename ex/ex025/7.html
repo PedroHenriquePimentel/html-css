@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+    <p><label for="iest">estado</label></p>
+    <select name="est" id="iest">
+        <optgroup label="sul">
+            <option value="rs">rio grande do sul</option>
+            <option value="sc" selected>santa catarina</option>
+        </optgroup>
+    </select>
+    <p>
+        <label for="iprof">profisao</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option value="adm">adm</option>
+        </datalist>
+    </p>
+    <p>
+        <label for="imsg">msg</label>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+</form>
+</body>
+</html>
