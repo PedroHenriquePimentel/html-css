@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
 <h1>Meu site</h1>
-<menu>
+<span id="ham" class="material-symbols-outlined" onclick="clickMenu()">
+    menu
+    </span>
+<menu id="item">
     <ul>
         <li><a href="#">opç1</a></li>
         <li><a href="#">opç2</a></li>
@@ -28,5 +33,21 @@
 </p>
         </article>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                item.style.display = 'block' 
+            } else {
+                item.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+           if(item.style.display == 'block') {
+            item.style.display = 'none'
+           } else {
+            item.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
