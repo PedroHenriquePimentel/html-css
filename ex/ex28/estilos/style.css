@@ -1,18 +1,19 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     background-color: lightgrey;
     height: 100vh;
     width: 100vw;
 }
 header {
-    background-color: grey;
+    background-color: gray;
     color: white;
     padding: 10px;
     display: flex;
@@ -21,32 +22,28 @@ header {
     align-items: center;
 }
 header > h1 {
-    flex: 0 0 200px;
-    text-shadow: 2px 2px 0px black;
+    border: 1px dotted black;
+    flex:  0 0 200px;
 }
-header > nav {
-    display: flex;
+nav {
+    border: 1px dotted black;
+    display:flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
-header > nav > a {
+a {
     background-color: black;
     color: white;
     padding: 10px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration: none;
     text-align: center;
 }
-header > nav > a:hover {
+a:hover {
+    transition: 0.3s;
     background-color: white;
-    color: black;
-    transition: background-color .5s;
 }
-main {
+main{
     background-color: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
 }
