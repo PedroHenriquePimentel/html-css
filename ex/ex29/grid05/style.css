@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.caixa1 {
+    background-color: red;
+    grid-row: 1/ 2; /*Poderia ser span 1 tbm*/
+    grid-column: 1/ 5; /*Poderia ser -1 tbm*/
+}
+
+.caixa2 {
+    background-color: green;
+    /*
+    grid-row: 2/-1;
+    grid-column: 1/3;
+    */
+    grid-area: 2/1/-1/3; /*Poderia ser com spans tbm*/
+}
+
+.caixa3 {
+    background-color: blue;
+    grid-row: 2/-1;
+    grid-column: 3/-1;
+}
